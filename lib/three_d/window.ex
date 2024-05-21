@@ -40,6 +40,7 @@ defmodule ThreeD.Window do
     :wxGLCanvas.connect(canvas, :key_up)
     :wxGLCanvas.connect(canvas, :motion)
     :wxGLCanvas.connect(canvas, :mousewheel, [:callback])
+    # :wxGLCanvas.connect(canvas, :mousewheel, [callback: &cb/2])
 
     %{
       frame: frame,
